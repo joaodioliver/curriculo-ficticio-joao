@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>João — Currículo</title>
+  <!--
+    Arquivo: index.html
+    Instruções rápidas:
+    - Abra esta pasta no VS Code.
+    - Edite o conteúdo se quiser personalizar.
+    - Para separar o CSS, copie a seção <style> para um arquivo styles.css e adicione <link rel="stylesheet" href="styles.css">.
+
+    Perfil já preenchido com nome 'João' e informações de exemplo (inventadas) — edite conforme precisar.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --accent: #0b72ff;
+      --text: #222;
+      --muted: #666;
+      --maxw: 960px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+
+    .container{max-width:var(--maxw);margin:36px auto;padding:18px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 8px 22px rgba(15,15,15,0.06);overflow:hidden}
+
+    .header{display:flex;gap:18px;padding:22px;border-bottom:1px solid #eee;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6ce);flex:0 0 96px}
+    .info h1{margin:0;font-size:1.5rem}
+    .info p.title{margin:6px 0;color:var(--accent);font-weight:600}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:0.95rem}
+
+    .main{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:20px}
+    .section{margin-bottom:18px}
+    .section h2{font-size:1.02rem;margin:0 0 8px 0}
+    .profile{line-height:1.45;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f0f5ff;padding:6px 10px;border-radius:999px;font-size:0.9rem}
+    .experience .job{margin-bottom:12px}
+    .job h3{margin:0;font-size:1rem}
+    .job .meta{font-size:0.9rem;color:var(--muted)}
+
+    .right-card{background:#fbfcff;padding:18px;border-left:1px solid #f0f0f0}
+
+    .no-print{display:block}
+    .print-only{display:none}
+
+    @media (max-width:860px){
+      .main{grid-template-columns:1fr;padding:16px}
+      .right-card{border-left:none;border-top:1px solid #f0f0f0}
+      .header{gap:12px}
+      .avatar{width:72px;height:72px}
+    }
+
+    /* Estilos para impressão (PDF) */
+    @media print{
+      body{background:#fff;color:#000}
+      .container{max-width:100%;margin:0;padding:0}
+      .card{box-shadow:none;border-radius:0}
+      .no-print{display:none}
+      .print-only{display:block}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header class="header">
+        <div class="avatar" aria-hidden="true"></div>
+
+        <div class="info">
+          <h1>João</h1>
+          <p class="title">Técnico de Suporte Jr. — Estudante de Ciência da Computação</p>
+          <div class="contact">
+            <div>📧 <a href="mailto:joao.exemplo@email.com">joao.exemplo@email.com</a></div>
+            <div>📱 (+55) 65 99999-0000</div>
+            <div>📍 Cuiabá, MT</div>
+            <div>🔗 <a href="#" target="_blank" rel="noopener">linkedin.com/in/joao-exemplo</a></div>
+            <div>💻 <a href="#" target="_blank" rel="noopener">github.com/joaosilva</a></div>
+          </div>
+        </div>
+
+        <div style="margin-left:auto;text-align:right" class="no-print">
+          <button onclick="window.print()">Imprimir / Salvar PDF</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div>
+          <section class="section profile-section">
+            <h2>Resumo</h2>
+            <p class="profile">Técnico de Suporte Jr. com experiência em atendimento ao cliente, manutenção de hardware e suporte remoto. Proativo, com boas habilidades de comunicação e foco em solução de problemas.</p>
+          </section>
+
+          <section class="section experience">
+            <h2>Experiência</h2>
+
+            <article class="job">
+              <h3>Técnico de Suporte Jr. — TechServ Solutions</h3>
+              <div class="meta">Jan 2024 — Atual • Cuiabá, MT</div>
+              <ul>
+                <li>Atendimento e resolução de chamados de 30–50 usuários por mês.</li>
+                <li>Instalação e configuração de estações Windows e distribuições Linux.</li>
+                <li>Documentação de procedimentos e criação de scripts simples para automação.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <h3>Estoquista — LogiStore</h3>
+              <div class="meta">Jan 2022 — Dez 2023 • Cuiabá, MT</div>
+              <ul>
+                <li>Controle de estoque, conferência de mercadorias e organização do almoxarifado.</li>
+                <li>Coordenação de pequenas equipes e suporte na logística interna.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="section projects">
+            <h2>Projetos</h2>
+            <ul>
+              <li><strong>Sistema de Chamados (acadêmico)</strong> — CRUD simples para gerenciar tickets; usei HTML/CSS/JS e Git para versionamento.</li>
+              <li><strong>Script de Backup</strong> — script em Bash para backup local de pastas importantes.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <aside class="right-card">
+          <section class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+              <span class="skill">Linux</span>
+              <span class="skill">Windows</span>
+              <span class="skill">Hardware</span>
+              <span class="skill">Redes TCP/IP</span>
+              <span class="skill">Git</span>
+              <span class="skill">SQL básico</span>
+              <span class="skill">Atendimento ao cliente</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Educação</h2>
+            <div>
+              <strong>Bacharelado — Ciência da Computação</strong>
+              <div class="meta">Universidade Estadual de Mato Grosso — Início 2022 — previsão 2026</div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Certificações</h2>
+            <ul>
+              <li>IT Essentials — 2023 (certificação de exemplo)</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Idiomas</h2>
+            <ul>
+              <li>Português — Nativo</li>
+              <li>Inglês — Básico</li>
+            </ul>
+          </section>
+        </aside>
+      </main>
+
+      <footer style="padding:16px;border-top:1px solid #eee;font-size:0.9rem;color:var(--muted)">
+        Dica: personalize cores, fontes e o conteúdo. Este arquivo é um ponto de partida — edite os textos para colocar suas informações reais.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
