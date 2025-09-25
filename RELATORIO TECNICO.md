@@ -1,7 +1,7 @@
 # Relatório Técnico — Currículo em HTML/CSS
 
 ## Visão Geral
-Este repositório contém um currículo desenvolvido em HTML5 e CSS3, projetado para ser simples, responsivo e de fácil personalização.  
+Este repositório contém um currículo ficcional desenvolvido em HTML5 e CSS3, projetado para ser simples, responsivo e de fácil personalização.  
 O arquivo principal é `index.html`, que já possui uma estrutura pronta para exibir informações pessoais, profissionais e acadêmicas.
 
 ## Estrutura do Projeto
@@ -59,6 +59,7 @@ Ele chama `window.print()`, permitindo exportar o currículo para PDF com layout
 ## Licença
 Este projeto pode ser utilizado livremente para fins pessoais.  
 Recomenda-se manter a atribuição e, se possível, contribuir com melhorias.  
+
 
 
 
